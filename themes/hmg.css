@@ -733,11 +733,11 @@ section.diagram h1 {
   border-radius: 999px;
   padding: 4px 12px;
 }
-.svg-lifecycle .svg-layer-arrow { margin-left: auto; width: 42%; }
-.svg-to-be .svg-layer-arrow { margin: 7px 0 5px; }
-.svg-runtime .svg-layer-arrow { margin: 3px 0 7px; }
+.svg-lifecycle .svg-layer-arrow { margin: 10px 0 12px auto; width: 46%; }
+.svg-to-be .svg-layer-arrow { margin: 12px 0 10px; }
+.svg-runtime .svg-layer-arrow { margin: 12px 0 12px; }
 .diagram-band { color: var(--hmg-blue); font-family: var(--hmg-heading); font-size: 10.5px; font-weight: 900; letter-spacing: .06em; margin: 6px 0 5px; }
-.svg-lane { background: #fff; border: 1px solid var(--hmg-border-default); border-radius: 10px; margin-bottom: 8px; padding: 8px; }
+.svg-lane { background: #fff; border: 1px solid var(--hmg-border-default); border-radius: 10px; margin-bottom: 12px; padding: 8px; }
 .svg-lane > h3 { color: var(--hmg-navy); font-size: 13.5px; margin: 0 0 6px; }
 .svg-runtime .diagram-node { min-height: 54px; }
 .svg-to-be .diagram-node { min-height: 54px; }
