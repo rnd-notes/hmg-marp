@@ -646,6 +646,30 @@ section.draft::after {
   padding-top: var(--hmg-sp-2);
 }
 
+.svg-diagram { font-size: 13px; line-height: 1.16; margin-top: var(--hmg-sp-3); }
+.svg-diagram .diagram-node { min-height: 58px; padding: 9px 10px; }
+.svg-diagram .diagram-node h3 { font-size: 16px; line-height: 1.05; }
+.svg-diagram .diagram-node p { font-size: 12px; }
+.svg-diagram .diagram-node small { color: var(--hmg-text-muted); display: block; font-size: 10.5px; margin-top: 3px; }
+.diagram-node--ok { border-left-color: #15803d; }
+.svg-row { align-items: stretch; display: grid; gap: 7px; }
+.svg-row--snake-top,
+.svg-row--snake-bottom,
+.svg-row--five { grid-template-columns: 1fr 22px 1fr 22px 1fr 22px 1fr 22px 1fr; }
+.svg-row--five-compact { grid-template-columns: .86fr 18px .95fr 18px 1fr 18px .92fr 18px .78fr; }
+.svg-row--four { grid-template-columns: 1fr 20px 1fr 20px 1.15fr 20px .9fr; }
+.svg-row--three { grid-template-columns: repeat(3, 1fr); }
+.svg-row--two { grid-template-columns: 1fr 1fr; }
+.svg-down { padding-right: 8%; text-align: right; }
+.diagram-band { color: var(--hmg-blue); font-family: var(--hmg-heading); font-size: 11px; font-weight: 900; letter-spacing: .06em; margin: 6px 0 5px; }
+.svg-lane { background: #fff; border: 1px solid var(--hmg-border-default); border-radius: 10px; margin-bottom: 8px; padding: 8px; }
+.svg-lane > h3 { color: var(--hmg-navy); font-size: 14px; margin: 0 0 6px; }
+.svg-runtime .diagram-node { min-height: 54px; }
+.svg-to-be .diagram-node { min-height: 52px; }
+.svg-to-be .diagram-arrow small { color: var(--hmg-text-muted); display: block; font-size: 8.5px; font-weight: 700; line-height: 1; }
+.svg-diagram .diagram-lane { font-size: 11px; margin-top: 6px; padding: 5px 8px; }
+.svg-diagram + .diagram-note { margin-top: var(--hmg-sp-2); }
+
 .process { counter-reset: step; display: grid; gap: var(--hmg-sp-4); grid-template-columns: repeat(4, 1fr); margin-top: var(--hmg-sp-5); }
 .process > * { border-top: 3px solid var(--hmg-blue); counter-increment: step; padding-top: var(--hmg-sp-3); }
 .process > *::before { color: var(--hmg-blue); content: counter(step, decimal-leading-zero); display: block; font-family: var(--hmg-heading); font-size: 26px; font-weight: 900; margin-bottom: var(--hmg-sp-2); }
