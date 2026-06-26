@@ -1,0 +1,27 @@
+{
+  "name": "hmg-marp",
+  "version": "0.1.0",
+  "description": "HMG-style Marp presentation template based on a local PowerPoint reference.",
+  "private": false,
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "deck:html": "marp examples/hmg-sample.md --theme themes/hmg.css --html -o dist/hmg-sample.html",
+    "deck:pdf": "marp examples/hmg-sample.md --theme themes/hmg.css --pdf -o dist/hmg-sample.pdf",
+    "deck:pptx": "marp examples/hmg-sample.md --theme themes/hmg.css --pptx -o dist/hmg-sample.pptx",
+    "deck:wide": "marp examples/hmg-wide.md --theme themes/hmg.css --html -o dist/hmg-wide.html",
+    "build": "npm run validate && npm run deck:html && npm run deck:wide && npm run deck:pdf",
+    "build:all": "npm run build && npm run deck:pptx"
+  },
+  "keywords": [
+    "marp",
+    "marp-theme",
+    "presentation",
+    "hmg",
+    "template"
+  ],
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.4.0"
+  }
+}
