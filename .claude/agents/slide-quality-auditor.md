@@ -37,12 +37,19 @@ Audit checklist:
    - Are dividers visually related to the template, not a generic startup deck?
    - Are diagram/table/code slides using intentional layouts instead of arbitrary scaling?
 
-3. Overflow/readability
+3. Figures, diagrams, and alignment
+   - Do all normal content slides start at the top header/title zone rather than being vertically centered?
+   - Are all rendered figures present, with no broken image placeholders?
+   - If a figure represents a whole slide page, was its content recreated in Markdown/HTML rather than pasted as an opaque screenshot?
+   - If a block diagram is present, is it represented as editable HTML/CSS blocks or accompanied by source plus a rendered fallback asset?
+   - Are large surfaces light rather than dark?
+
+4. Overflow/readability
    - No clipped text.
    - No code/table text below ~13px in rendered 1280x720 previews.
    - No low-contrast text or hidden pseudo-element content.
 
-4. Adversarial scoring
+5. Adversarial scoring
    - Score each contact sheet 0–10 for PPT-template fidelity.
    - A score below 8 blocks release.
    - List exact CSS/Markdown fixes, not vague advice.

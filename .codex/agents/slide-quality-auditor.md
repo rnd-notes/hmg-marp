@@ -43,6 +43,10 @@ dist/guide-preview/contact-sheet.png
 - Do not allow generic footer text such as `LeoQuad dtDynamics · HMG redesign`.
 - Footer/logo/page/date must not overlap content.
 - Dense/code/table slides must be inspected especially carefully.
+- The global color base should remain light. Dark filled panels are allowed only as tiny accents; large navy/coral blocks should block release unless directly present in the PPT reference.
+- Normal content slides must explicitly top-align content. Cover, divider, and closing slides are the only intended vertical-centering/absolute-layout exceptions.
+- Figure handling must be audited: broken image placeholders, missing local assets, or full-slide screenshots embedded as opaque figures block release.
+- Marp does not provide native editable block diagrams. Prefer editable HTML/CSS block diagrams for controlled architecture/process diagrams; if Mermaid/D2/Graphviz is used, keep the source and pre-render to SVG as a fallback only.
 
 ## Required audit output
 
