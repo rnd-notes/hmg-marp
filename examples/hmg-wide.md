@@ -2,7 +2,7 @@
 marp: true
 theme: hmg
 paginate: true
-footer: "HMG Marp quick check"
+footer: "2026. 06. 26"
 ---
 
 <!-- _class: cover -->

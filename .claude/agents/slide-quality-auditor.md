@@ -13,7 +13,9 @@ Reference constraints from `C:\Users\JoJoonhee\Desktop\ppt\hmg-template.pptx`:
 
 - Cover slide must be light, not dark navy.
 - Cover background uses the template’s soft sand/white photographic or sand-toned surface language.
-- Cover has a top-right purpose/status row: `○ Decision Making`, `● Information Sharing`, `○ Directions`.
+- Cover has a top-right purpose/status stack, vertically aligned in one column with safe right margin: `○ Decision Making`, `● Information Sharing`, `○ Directions`.
+- Standard content slides use a top-left header/title zone with a horizontal rule directly below the title, matching the PPT header break-line behavior.
+- Standard slides must not put brand text in the footer. Footer zone should contain page number at bottom-left, date next to it, a horizontal rule above, and Hyundai logo bottom-right.
 - Cover title is large, black/navy, left-aligned, around x=7% and y=24% of the slide.
 - Cover metadata is bottom-left around x=7% and y=74%.
 - Hyundai logo is bottom-right around x=82% and y=92%, roughly 15% slide width.
@@ -25,13 +27,13 @@ Audit checklist:
 1. Cover slide fidelity
    - Is background light/sand/photo-like?
    - Is title position close to PPT: left 6–8%, top 23–26%?
-   - Is top-right decision row present and aligned?
+   - Is top-right decision stack present, vertically aligned, and inset from the right edge?
    - Is bottom-left metadata present?
    - Is Hyundai logo bottom-right and correctly sized?
    - Is there no dark navy cover unless the source template explicitly used one?
 
 2. Layout consistency
-   - Do content slides share consistent title x/y and footer behavior?
+   - Does every non-cover slide have bottom-left page number/date, a footer rule above, and Hyundai logo bottom-right?
    - Are dividers visually related to the template, not a generic startup deck?
    - Are diagram/table/code slides using intentional layouts instead of arbitrary scaling?
 

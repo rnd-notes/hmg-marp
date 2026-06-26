@@ -91,24 +91,25 @@ section {
 }
 
 section::before {
-  content: 'Hyundai Motor Group';
+  background-image: var(--hmg-logo);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 12px;
+  content: '';
+  height: 21px;
+  left: auto;
   position: absolute;
-  left: 38px;
-  bottom: 21px;
-  color: var(--hmg-text-muted);
-  font-family: var(--hmg-heading);
-  font-size: 10px;
-  font-weight: 750;
-  letter-spacing: var(--hmg-tracking-caps);
-  text-transform: uppercase;
+  right: 38px;
+  width: 150px;
 }
 
 section::after {
   color: var(--hmg-text-muted);
   font-family: var(--hmg-body);
   font-size: 12px;
-  right: 38px;
-  bottom: 21px;
+  left: 38px;
+  right: auto;
+  bottom: 17px;
 }
 
 section > header,
@@ -119,10 +120,19 @@ section > footer {
 }
 
 section > footer {
-  left: 150px;
-  right: 210px;
-  bottom: 21px;
+  bottom: 17px;
+  left: 80px;
+  right: 220px;
   text-align: left;
+}
+
+section > footer::before {
+  border-top: 1px solid var(--hmg-border-default);
+  content: '';
+  left: -42px;
+  position: absolute;
+  right: -178px;
+  top: -10px;
 }
 
 h1, h2, h3, h4, strong {
@@ -130,12 +140,14 @@ h1, h2, h3, h4, strong {
 }
 
 h1 {
+  border-bottom: 1px solid var(--hmg-border-default);
   color: var(--hmg-navy);
   font-size: var(--hmg-font-h1);
   font-weight: 850;
   line-height: var(--hmg-leading-tight);
   letter-spacing: var(--hmg-tracking-heading);
   margin: 0 0 var(--hmg-sp-5);
+  padding-bottom: var(--hmg-sp-3);
 }
 
 h2 {
@@ -272,6 +284,7 @@ section.cover code {
 }
 
 section.cover h1 {
+  border-bottom: none;
   color: var(--hmg-black);
   font-family: var(--hmg-heading);
   font-size: 50px;
@@ -281,24 +294,24 @@ section.cover h1 {
   line-height: 1.08;
   margin: 0;
   max-width: 77%;
+  padding-bottom: 0;
   position: absolute;
   top: 23.9%;
 }
 
 section.cover .cover-purpose {
-  align-items: center;
+  align-items: flex-end;
   color: var(--hmg-black);
   display: flex;
+  flex-direction: column;
   font-family: var(--hmg-heading);
   font-size: 15px;
   font-weight: 620;
-  gap: 22px;
-  justify-content: flex-start;
-  left: 83.7%;
+  gap: 6px;
   line-height: 1.25;
   position: absolute;
+  right: 5.6%;
   top: 3.5%;
-  transform: translateX(-50%);
   white-space: nowrap;
 }
 
@@ -338,19 +351,26 @@ section.divider {
 }
 
 section.divider::before {
-  color: var(--hmg-text-muted);
-  content: 'Hyundai Motor Group';
-  left: 7.0%;
-  top: 7.0%;
-  bottom: auto;
+  background-image: var(--hmg-logo);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 12px;
+  content: '';
+  height: 21px;
+  left: auto;
+  right: 38px;
+  top: auto;
+  width: 150px;
 }
 
 section.divider h1 {
+  border-bottom: none;
   border-left: 5px solid var(--hmg-navy);
   color: var(--hmg-black);
   font-size: 50px;
   line-height: 1.08;
   max-width: 820px;
+  padding-bottom: 0;
   padding-left: var(--hmg-sp-5);
 }
 
@@ -362,7 +382,7 @@ section.title-card {
   flex-direction: column;
   justify-content: center;
 }
-section.title-card h1 { font-size: var(--hmg-font-display); max-width: 940px; }
+section.title-card h1 { border-bottom: none; font-size: var(--hmg-font-display); max-width: 940px; padding-bottom: 0; }
 
 section.closing {
   align-items: center;
@@ -372,8 +392,18 @@ section.closing {
   justify-content: center;
   text-align: center;
 }
-section.closing h1 { font-size: var(--hmg-font-display); }
-section.closing::before { content: 'Hyundai Motor Group'; }
+section.closing h1 { border-bottom: none; font-size: var(--hmg-font-display); padding-bottom: 0; }
+section.closing::before {
+  background-image: var(--hmg-logo);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 12px;
+  content: '';
+  height: 21px;
+  left: auto;
+  right: 38px;
+  width: 150px;
+}
 
 section.lead {
   display: flex;
@@ -381,7 +411,7 @@ section.lead {
   justify-content: center;
   text-align: left;
 }
-section.lead h1 { font-size: 52px; max-width: 980px; }
+section.lead h1 { border-bottom: none; font-size: 52px; max-width: 980px; padding-bottom: 0; }
 
 section.agenda ol {
   counter-reset: agenda;
@@ -435,7 +465,16 @@ section.code-heavy pre { font-size: 14.5px; line-height: 1.24; padding: 10px 14p
 section.table-heavy table { font-size: 16.5px; }
 section.table-heavy td,
 section.table-heavy th { padding: 6px 9px; }
-section.confidential::before { content: 'CONFIDENTIAL'; color: var(--hmg-coral); }
+section.confidential > footer::after {
+  color: var(--hmg-coral);
+  content: 'CONFIDENTIAL';
+  font-family: var(--hmg-heading);
+  font-size: 12px;
+  font-weight: 800;
+  position: absolute;
+  right: 0;
+  top: -28px;
+}
 section.draft::after {
   color: rgba(0, 44, 95, 0.10);
   content: 'DRAFT';
