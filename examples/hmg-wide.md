@@ -5,15 +5,13 @@ paginate: true
 footer: "HMG Marp quick check"
 ---
 
-<!-- _class: cover-photo -->
+<!-- _class: cover -->
 
-![bg](../assets/hmg-template-media/image2.jpeg)
-
-<span class="overline">Template smoke test</span>
+<div class="cover-purpose"><span>○ Decision Making</span><span>● Information Sharing</span><span>○ Directions</span></div>
 
 # HMG Marp quick check
 
-<p class="subtitle">Photo cover, utility classes, dense technical content</p>
+<div class="cover-meta">Template smoke test<br/>Photo/class/layout verification<br/>HTML · PDF · PPTX</div>
 
 ---
 

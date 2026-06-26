@@ -7,11 +7,11 @@ footer: "HMG Marp template"
 
 <!-- _class: cover -->
 
-<span class="overline">Standard report template</span>
+<div class="cover-purpose"><span>○ Decision Making</span><span>● Information Sharing</span><span>○ Directions</span></div>
 
 # Decision-ready technical presentation
 
-<p class="subtitle">Month 00, 0000 · Management & Administration Division · Team Name</p>
+<div class="cover-meta">Month 00, 0000<br/>Management &amp; Administration Division<br/>Team Name</div>
 
 ---
 

@@ -2,6 +2,7 @@ node_modules/
 dist/
 design-input/
 design-reviews/
+reference-render/
 scripts/regenerate_hmg_guide.py
 .DS_Store
 *.log
