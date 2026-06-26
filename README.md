@@ -2,7 +2,7 @@
 
 HMG-style [Marp](https://github.com/marp-team/marp) presentation template project.
 
-This repository provides a reusable Marp CSS theme, example Markdown decks, and validation/build scripts inspired by the local PowerPoint reference template:
+This repository provides a reusable Marp CSS theme, example Markdown decks, and validation/build scripts inspired by the local PowerPoint reference template. The current theme is designed as a premium corporate technical deck system, not just a recolored default Marp theme:
 
 ```text
 C:\Users\JoJoonhee\Desktop\ppt\hmg-template.pptx

@@ -1,5 +1,8 @@
 node_modules/
 dist/
+design-input/
+design-reviews/
+scripts/regenerate_hmg_guide.py
 .DS_Store
 *.log
 .env

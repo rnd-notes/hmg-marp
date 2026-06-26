@@ -19,7 +19,7 @@ for (const rel of required) {
 }
 
 const css = fs.readFileSync(path.join(root, 'themes/hmg.css'), 'utf8');
-for (const token of ['/* @theme hmg */', '--hmg-navy: #002c5f', 'section.cover', '.cards', '.columns']) {
+for (const token of ['/* @theme hmg */', '--hmg-navy: #002c5f', '--hmg-font-display', 'section.cover', 'section.diagram', 'section.dense', '.code-split', '.process', '.cards', '.columns-2-1']) {
   if (!css.includes(token)) failures.push(`Theme CSS missing token: ${token}`);
 }
 
