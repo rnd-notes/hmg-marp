@@ -309,14 +309,22 @@ section.cover .cover-purpose {
   font-family: var(--hmg-heading);
   font-size: 15px;
   font-weight: 620;
-  gap: 6px;
-  line-height: 1.25;
+  gap: 0;
+  line-height: 1.16;
   position: absolute;
-  right: 5.6%;
+  right: 3.2%;
   text-align: left;
   top: 3.5%;
   white-space: nowrap;
-  width: 220px;
+  width: auto;
+}
+section.cover .cover-purpose span {
+  display: grid;
+  grid-template-columns: 12px max-content;
+  column-gap: 1px;
+}
+section.cover .cover-purpose b {
+  font-weight: 620;
 }
 
 section.cover .cover-meta {
@@ -587,7 +595,9 @@ section.draft::after {
   margin: var(--hmg-sp-4) 0 var(--hmg-sp-3);
 }
 .block-diagram--flow { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.block-diagram--flow-arrows { grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr); }
 .block-diagram--two { grid-template-columns: 1fr 1fr; }
+.block-diagram--arch { grid-template-columns: minmax(0, 1fr) 32px minmax(0, 1fr); }
 .block-diagram--stack { grid-template-columns: 1fr; max-width: 1040px; }
 .diagram-node {
   background: #fbfcfd;
@@ -600,15 +610,33 @@ section.draft::after {
 }
 .diagram-node--accent { border-left-color: var(--hmg-mint); }
 .diagram-node--warn { border-left-color: var(--hmg-coral); }
-.diagram-node h3 { color: var(--hmg-navy); font-size: 21px; margin: 0 0 var(--hmg-sp-2); }
-.diagram-node p { color: var(--hmg-text-secondary); font-size: 17px; margin: 0; }
+.diagram-node--muted { border-left-color: var(--hmg-border-strong); }
+.diagram-node h3 { color: var(--hmg-navy); font-size: 20px; margin: 0 0 var(--hmg-sp-2); }
+.diagram-node p { color: var(--hmg-text-secondary); font-size: 15.5px; margin: 0; }
+.diagram-node ul { margin: var(--hmg-sp-2) 0 0; padding-left: 1.05em; }
+.diagram-node li { color: var(--hmg-text-secondary); font-size: 14.5px; margin: 0.08em 0; }
 .diagram-arrow {
   align-self: center;
   color: var(--hmg-blue);
   font-family: var(--hmg-heading);
-  font-size: 24px;
-  font-weight: 850;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1;
   text-align: center;
+}
+.diagram-arrow::before,
+.diagram-arrow::after {
+  color: var(--hmg-blue);
+}
+.diagram-arrow--down { transform: rotate(90deg); }
+.diagram-lane {
+  background: #f6f8fa;
+  border: 1px dashed var(--hmg-border-strong);
+  border-radius: 8px;
+  color: var(--hmg-text-muted);
+  font-size: 14px;
+  grid-column: 1 / -1;
+  padding: 7px 12px;
 }
 .diagram-note {
   border-top: 1px solid var(--hmg-border-default);

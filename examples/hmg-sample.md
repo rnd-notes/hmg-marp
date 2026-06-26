@@ -7,7 +7,7 @@ footer: "2026. 06. 26"
 
 <!-- _class: cover -->
 
-<div class="cover-purpose"><span>○ Decision Making</span><span>● Information Sharing</span><span>○ Directions</span></div>
+<div class="cover-purpose"><span><b>○</b>Decision Making</span><span><b>●</b>Information Sharing</span><span><b>○</b>Directions</span></div>
 
 # Decision-ready technical presentation
 
